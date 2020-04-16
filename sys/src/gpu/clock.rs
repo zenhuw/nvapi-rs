@@ -262,7 +262,7 @@ pub mod private {
         }
     }
 
-    debug_array_impl! { [NV_CLOCK_MASKS_CLOCK; 80 + 24] }
+    debug_array_impl! { [NV_CLOCK_MASKS_CLOCK; 80 + 23] }
     debug_array_impl! { [u32; 916] }
 
     nvstruct! {
@@ -270,7 +270,7 @@ pub mod private {
             pub version: u32,
             pub mask: [u32; 4], // 80 bits
             pub unknown: [u32; 8],
-            pub clocks: Array<[NV_CLOCK_MASKS_CLOCK; 80 + 24]>,
+            pub clocks: Array<[NV_CLOCK_MASKS_CLOCK; 80 + 23]>,
             pub unknown2: Array<[u32; 916]>,
         }
     }
